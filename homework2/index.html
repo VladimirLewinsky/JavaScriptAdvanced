@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .img {
+        height: 200px;
+        width: 200px;
+      }
+      .container {
+        display: block;
+        width: 200px;
+        height: 300px;
+        position: relative;
+      }
+      .carousel-indicators {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        z-index: 15;
+        width: 60%;
+        padding-left: 0;
+        margin-left: -30%;
+        text-align: center;
+        list-style: none;
+      }
+      .carousel-indicators li {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 1px;
+        
+        cursor: pointer;
+        background-color: #000;
+    
+        border-radius: 10px;
+      }
+      .active {
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="img" src="./img/16858714095270.jpg" alt="" />
+      <ol class="carousel-indicators">
+        <li
+          class="dota active"
+          data-target="#myCarousel"
+          data-slide-to="0"
+        ></li>
+        <li class="dota " data-target="#myCarousel" data-slide-to="1"></li>
+        <li class="dota" data-target="#myCarousel" data-slide-to="2"></li>
+        <li class="dota" data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <button class="previos">Назад</button>
+      <button class="next">Вперед</button>
+    </div>
+
+    <script src="java.js"></script>
+  </body>
+</html>
